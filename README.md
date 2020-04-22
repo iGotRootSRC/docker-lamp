@@ -11,6 +11,13 @@ I use docker-compose as an orchestrator. To run these containers:
 docker-compose up -d
 ```
 
+Tag and run as `lamp`
+```
+docker build -t lamp .
+docker run --rm -it lamp
+```
+Change ports and passwords in yml file if needed
+
 Open phpmyadmin at [http://localhost:8000](http://localhost:8000)
 Open web browser to look at a simple php example at [http://localhost:8001](http://localhost:8001)
 
@@ -18,4 +25,3 @@ Run mysql client:
 
 - `docker-compose exec db mysql -u root -p` 
 
-Enjoy !
